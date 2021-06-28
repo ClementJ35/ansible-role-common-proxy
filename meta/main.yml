@@ -17,7 +17,7 @@ galaxy_info:
     - yum
 
   platforms:
-    - name: RHEL/CentOS
+    - name: EL
       versions:
         - 7
         - 8
