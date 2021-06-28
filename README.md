@@ -1,5 +1,9 @@
 # Ansible Role: Common Proxy
 
+[![Ansible Role: Common Proxy](https://img.shields.io/ansible/role/55479?style=flat-square)](https://galaxy.ansible.com/clementj35/proxy)
+[![Ansible Role: Common Proxy](https://img.shields.io/ansible/quality/55479?style=flat-square)](https://galaxy.ansible.com/clementj35/proxy)
+[![Ansible Role: Common Proxy](https://img.shields.io/ansible/role/d/55479?style=flat-square)](https://galaxy.ansible.com/clementj35/proxy)
+
 This role manages proxy settings of Linux systems.
 
 ## Requirements
@@ -104,4 +108,4 @@ MIT
 
 - [ClementJ35](https://github.com/ClementJ35/)
 
-This role was created in 2020 by [Thorian93](http://thorian93.de/).
+This role was created in 2020 by [clementj35](http://clementj35.de/).
