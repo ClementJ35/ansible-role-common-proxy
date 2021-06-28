@@ -29,7 +29,7 @@ secret-scan:
 ansible-lint:
   stage: linting
   tags:
-    - shell
+    - shell  GITLAB_REPO: "git@gitlab.com:thorian93_ansible/${REPO_NAME}.git"
   script:
     - ansible-lint ./
 
