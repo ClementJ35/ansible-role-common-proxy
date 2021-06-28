@@ -2,21 +2,13 @@
 
 This role manages proxy settings of Linux systems.
 
-[![Ansible Role: Common Proxy](https://img.shields.io/ansible/role/55132?style=flat-square)](https://galaxy.ansible.com/thorian93/proxy)
-[![Ansible Role: Common Proxy](https://img.shields.io/ansible/quality/55132?style=flat-square)](https://galaxy.ansible.com/thorian93/proxy)
-[![Ansible Role: Common Proxy](https://img.shields.io/ansible/role/d/55132?style=flat-square)](https://galaxy.ansible.com/thorian93/proxy)
-
-## Here be Dragons!
-
-This role was just created and I can and will not guarantee that it works properly! Use at your own risk! But also feel free to share any findings.
-
 ## Requirements
 
 No special requirements; note that this role requires root access, so either run it in a playbook with a global `become: yes`, or invoke the role in your playbook like:
 
     - hosts: foobar
       roles:
-        - role: thorian93.proxy
+        - role: clementj35.proxy
           become: yes
 
 ## Role Variables
@@ -70,13 +62,14 @@ Configure how to handle APT sources. This ensures that external repositories are
 
 ## Dependencies
 
-  - [thorian93.webserver](https://galaxy.ansible.com/thorian93/webserver)
+  - None
 
 ## OS Compatibility
 
 This role ensures that it is not used against unsupported or untested operating systems by checking, if the right distribution name and major version number are present in a dedicated variable named like `<role-name>_stable_os`. You can find the variable in the role's default variable file at `defaults/main.yml`:
 
     role_stable_os:
+      - Debian 11
       - Debian 10
       - Ubuntu 18
       - CentOS 7
@@ -93,7 +86,7 @@ Kudos to [HarryHarcourt](https://github.com/HarryHarcourt) for this idea!
       hosts: all
       become: yes
       roles:
-        - thorian93.proxy
+        - clementj35.proxy
 
 ## Contributing
 
@@ -108,5 +101,7 @@ This role is provided AS IS and I can and will not guarantee that the role works
 MIT
 
 ## Author Information
+
+- [ClementJ35](https://github.com/ClementJ35/)
 
 This role was created in 2020 by [Thorian93](http://thorian93.de/).

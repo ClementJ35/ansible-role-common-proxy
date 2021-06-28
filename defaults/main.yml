@@ -4,6 +4,7 @@ common_proxy_stable_os:
   - CentOS 7
   - CentOS 8
   - Debian 9
+  - Debian 11
   - Debian 10
   - Fedora 30
   - Fedora 31

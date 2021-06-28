@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   role_name: proxy
-  author: thorian93
+  author: clementj35
   description: Local Proxy Management
   license: "license (MIT)"
 
@@ -21,6 +21,7 @@ galaxy_info:
         - 8
     - name: Debian
       versions:
+        - Bullseye
         - Stretch
         - Buster
     - name: Fedora
@@ -37,7 +38,3 @@ galaxy_info:
         - Xenial
         - Bionic
         - Focal
-
-dependencies:
-  - name: thorian93.webserver
-    version: master

@@ -1,8 +1,7 @@
 ---
 variables:
   REPO_NAME: "ansible-role-common-proxy"
-  GITHUB_REPO: "git@github.com:thorian93/${REPO_NAME}.git"
-  GITLAB_REPO: "git@gitlab.com:thorian93_ansible/${REPO_NAME}.git"
+  GITHUB_REPO: "git@github.com:clementj35/${REPO_NAME}.git"
 
 stages:
   - cleanup
