@@ -10,6 +10,10 @@
   include_tasks: profile.yml
   when: common_proxy_profile_configure | bool
 
+- name: "Include Proxy for /etc/environment Playbook."
+  include_tasks: environment.yml
+  when: common_proxy_environment_configure | bool
+
 - name: "Include Proxy for Bash Playbook."
   include_tasks: bash.yml
   when: common_proxy_bash_configure | bool
