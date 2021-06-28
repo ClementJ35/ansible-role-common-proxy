@@ -1,2 +1,25 @@
 ---
 
+- name: "Add proxy variables to /etc/environement"
+  lineinfile:
+    path: /etc/environment
+    state: present
+    mode: 0644
+    owner: root
+    group: root
+    line: "{{ item.line }}"
+    regexp: "{{ item.regexp }}"
+    create: True
+  with_items:
+    - line: "http_proxy='http://{{ common_proxy_server }}:{{ common_proxy_port }}'"
+      regexp: "^http_proxy=.*"
+    - line: "https_proxy='http://{{ common_proxy_server }}:{{ common_proxy_port }}'"
+      regexp: "^https_proxy=.*"
+    - line: "no_proxy='localhost{% for proxy_exception in common_proxy_exceptions %}, {{ proxy_exception }}{% endfor %}'"
+      regexp: "^no_proxy=.*"
+    - line: "HTTP_PROXY='http://{{ common_proxy_server }}:{{ common_proxy_port }}'"
+      regexp: "^HTTP_PROXY=.*"
+    - line: "HTTPS_PROXY='http://{{ common_proxy_server }}:{{ common_proxy_port }}'"
+      regexp: "^HTTPS_PROXY=.*"
+    - line: "NO_PROXY='localhost{% for proxy_exception in common_proxy_exceptions %}, {{ proxy_exception }}{% endfor %}'"
+      regexp: "^NO_PROXY=.*"
