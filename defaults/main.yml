@@ -27,11 +27,16 @@ common_proxy_profile_configure: 'false'
 common_proxy_wget_configure: 'false'
 common_proxy_systemd_configure: 'false'
 
+common_proxy_protocol: http
 common_proxy_server: "127.0.0.1"
 common_proxy_port: "8080"
 common_proxy_exceptions:
   - 127.0.0.0/8
   - ::1
+
+# Construct full proxy string, set to nothing if common_proxy_server is "" or common_proxy_port is ""
+common_proxy_string: "{% if common_proxy_server == '' or common_proxy_port == '' %}{% else %}\
+  {{ common_proxy_protocol }}://{{ common_proxy_server }}:{{ common_proxy_port }}{% endif %}"
 
 # APT
 # Set to blank "" to remove lines from the configuration

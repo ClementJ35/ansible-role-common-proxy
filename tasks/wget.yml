@@ -1,5 +1,5 @@
 ---
-- name: "Update /etc/wgetrc with proxy settings."
+- name: "wgetrc | update /etc/wgetrc with proxy settings."
   lineinfile:
    dest: /etc/wgetrc
    line: "{{ item.line }}"
@@ -9,7 +9,7 @@
    group: root
    mode: 0644
   with_items:
-   - line: "http_proxy = http://{{ common_proxy_server }}:{{ common_proxy_port }}"
+   - line: "http_proxy = {{ common_proxy_string }}"
      regexp: "^http_proxy =.*"
-   - line: "https_proxy = http://{{ common_proxy_server }}:{{ common_proxy_port }}"
+   - line: "https_proxy = {{ common_proxy_string }}"
      regexp: "^https_proxy =.*"
