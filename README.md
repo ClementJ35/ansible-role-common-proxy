@@ -19,14 +19,15 @@ No special requirements; note that this role requires root access, so either run
 
 Available variables are listed below, along with default values (see `defaults/main.yml`):
 
-    common_proxy_apache2_configure: 'false'
-    common_proxy_apt_configure: 'false'
-    common_proxy_bash_configure: 'false'
-    common_proxy_dnf_yum_configure: 'false'
-    common_proxy_git_configure: 'false'
-    common_proxy_profile_configure: 'false'
-    common_proxy_wget_configure: 'false'
-    common_proxy_systemd_configure: 'false'
+    common_proxy_apache2_configure: false
+    common_proxy_apt_configure: false
+    common_proxy_bash_configure: false
+    common_proxy_dnf_yum_configure: false
+    common_proxy_environment_configure: false
+    common_proxy_git_configure: false
+    common_proxy_profile_configure: false
+    common_proxy_wget_configure: false
+    common_proxy_systemd_configure: false
 
 Choose which parts of the system should be configured with a proxy.
 
@@ -108,4 +109,4 @@ MIT
 
 - [ClementJ35](https://github.com/ClementJ35/)
 
-This role was created in 2020 by [clementj35](http://clementj35.de/).
+This role was created in 2020 by [Thorian93](http://Thorian93.de/).

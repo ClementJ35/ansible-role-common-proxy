@@ -10,7 +10,7 @@
     owner: root
     group: root
     mode: 0644
-  when: common_proxy_apt_proxy_server | length
+  when: ( common_proxy_apt_proxy_server | length ) and ( common_proxy_apt_proxy_port | length )
 
 - name: "Remove proxy for APT."
   file:
