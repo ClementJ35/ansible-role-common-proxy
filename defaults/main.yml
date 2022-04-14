@@ -12,20 +12,22 @@ common_proxy_stable_os:
   - Fedora 33
   - openSUSE Leap 15
   - openSUSE Leap 42
+  - RedHat 7
+  - RedHat 8
   - Ubuntu 16
   - Ubuntu 18
   - Ubuntu 20
 
 # Common Management Selections:
-common_proxy_apache2_configure: 'false'
-common_proxy_apt_configure: 'false'
-common_proxy_bash_configure: 'false'
-common_proxy_dnf_yum_configure: 'false'
-common_proxy_environment_configure: 'false'
-common_proxy_git_configure: 'false'
-common_proxy_profile_configure: 'false'
-common_proxy_wget_configure: 'false'
-common_proxy_systemd_configure: 'false'
+common_proxy_apache2_configure: false
+common_proxy_apt_configure: false
+common_proxy_bash_configure: false
+common_proxy_dnf_yum_configure: false
+common_proxy_environment_configure: false
+common_proxy_git_configure: false
+common_proxy_profile_configure: false
+common_proxy_wget_configure: false
+common_proxy_systemd_configure: false
 
 common_proxy_protocol: http
 common_proxy_server: "127.0.0.1"
