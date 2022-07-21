@@ -14,9 +14,10 @@ common_proxy_stable_os:
   - RedHat 7
   - RedHat 8
   - RedHat 9
-  - Ubuntu 16
   - Ubuntu 18
   - Ubuntu 20
+  - Ubuntu 21
+  - Ubuntu 22
 
 # Common Management Selections:
 common_proxy_apache2_configure: false
