@@ -71,14 +71,7 @@ Configure how to handle APT sources. This ensures that external repositories are
 
 ## OS Compatibility
 
-This role ensures that it is not used against unsupported or untested operating systems by checking, if the right distribution name and major version number are present in a dedicated variable named like `<role-name>_stable_os`. You can find the variable in the role's default variable file at `defaults/main.yml`:
-
-    role_stable_os:
-      - Debian 11
-      - Debian 10
-      - Ubuntu 18
-      - CentOS 7
-      - Fedora 30
+This role ensures that it is not used against unsupported or untested operating systems by checking, if the right distribution name and major version number are present in a dedicated variable named like `<role-name>_stable_os`. You can find the variable in the role's default variable file at `defaults/main.yml`.
 
 If the combination of distribution and major version number do not match the target system, the role will fail. To allow the role to work add the distribution name and major version name to that variable and you are good to go. But please test the new combination first!
 
