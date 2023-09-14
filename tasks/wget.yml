@@ -13,3 +13,4 @@
      regexp: "^http_proxy =.*"
    - line: "https_proxy = {{ common_proxy_string }}"
      regexp: "^https_proxy =.*"
+  no_log: true

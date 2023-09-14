@@ -23,3 +23,4 @@
       regexp: "^HTTPS_PROXY=.*"
     - line: "NO_PROXY='localhost{% for proxy_exception in common_proxy_exceptions %}, {{ proxy_exception }}{% endfor %}'"
       regexp: "^NO_PROXY=.*"
+  no_log: true
