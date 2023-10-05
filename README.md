@@ -84,7 +84,7 @@ Kudos to [HarryHarcourt](https://github.com/HarryHarcourt) for this idea!
 
 ## Contributing
 
-Please feel free to open issues if you find any bugs, problems or if you see room for improvement. Also feel free to contact me anytime if you want to ask or discuss something.
+Please feel free to open issues if you find any bugs, problems or if you see room for improvement.
 
 ## Disclaimer
 
